@@ -1,0 +1,228 @@
+html {
+    font-size: 16px;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  /* Modern browsers only need this one */
+  @media screen and (min-width: 25em) {
+    html {
+      font-size: calc(16px + (19 - 16) * (100vw - 400px) / (800 - 400));
+    }
+  }
+  
+  @media screen and (min-width: 42.1em) {
+    html {
+      font-size: 19px;
+    }
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100%;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+  }
+  
+  section:nth-child(3) {
+    padding-top: 1rem;
+  }
+  
+  /* Typography
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-weight: 300;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: -0.1rem;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: -0.1rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    letter-spacing: -0.1rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    letter-spacing: -0.08rem;
+  }
+  h5 {
+    font-size: 1.12rem;
+    line-height: 1.3;
+    letter-spacing: -0.05rem;
+  }
+  h6 {
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+  
+  p {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .align-left {
+    text-align: left;
+  }
+  
+  .bold {
+    font-weight: 600;
+  }
+  
+  /* Links
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  a {
+    color: #1eaedb;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;}
+  
+  a:hover {
+    color: #0fa0ce;
+  }
+  
+  /* Forms
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea,
+  select {
+    height: 38px;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+  
+  /* Removes awkward default styles on some inputs for iOS */
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #33c3f0;
+    outline: 0;
+  }
+  label,
+  legend {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  fieldset {
+    padding: 0;
+    border-width: 0;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: inline;
+  }
+  label > .label-body {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-weight: normal;
+  }
+  
+  /* Lists
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  ul {
+    list-style: circle inside;
+  }
+  ol {
+    counter-reset: section;
+  }
+  ol,
+  ul {
+    padding-left: 0;
+    margin-top: 0;
+    text-align: left;
+    list-style-position: outside;
+  }
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin: 1.5rem 0 1.5rem 3rem;
+    font-size: 90%;
+  }
+  
+  ol li {
+    margin-left: 1rem;
+    padding-left: 0.4rem;
+  }
+  
+  ol li p {
+  }
+  
+  /* ol li::before {
+    counter-increment: section;
+    content: counter(section) ". ";
+    color: green;
+    font-weight: bold;
+  }
+  
+  ol li {
+  }*/
+  

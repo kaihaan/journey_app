@@ -1,0 +1,95 @@
+.InputDiv {
+    width: 100%;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+
+
+/* --- CHECKBOX --- */
+
+.CheckBoxDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.CheckBoxLabel {
+    display: flex;
+    font-weight: bold;
+    padding-left: 10px;
+}
+ .CheckBox {
+    display: flex;
+    -ms-transform: scale(1.5); /* IE */
+    -moz-transform: scale(1.5); /* FF */
+    -webkit-transform: scale(1.5); /* Safari and Chrome */
+    -o-transform: scale(1.5); /* Opera */
+    transform: scale(1.5);
+ }
+
+ /* --- LABEL --- */
+
+ .Label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.Select {
+    display: block;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: rgb(236, 236, 236);
+    font: inherit;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+
+.Error {
+    color: red;
+    padding: 5px;
+    margin-top: 5px;
+    display: block;
+}
+
+.FieldError {
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(255, 103, 103) !important;
+}
+
+/* --- INPUT BOX TYPES --- */
+
+.InputBox {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: rgb(221, 221, 221) !important;
+    color: rgb(31, 31, 31) !important;
+    background-image: none !important;
+    font: inherit;
+    padding: 6px 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+.Text {
+
+}
+
+.Text:focus {
+    outline: none;
+    background-color: rgb(185, 185, 185) !important;
+}
+
+
+.TextArea {
+
+}
+
+.Number {
+
+}
